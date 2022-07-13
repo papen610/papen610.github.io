@@ -1,0 +1,310 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: Verdana, Arial, sans-serif;
+	background-color: #FCF7F2;   /*Very light beige color that is used for the main background color of the website and contrast text.*/
+	color: #010101;   /*Dark black used for the majority of the content text.*/
+	margin: 0;
+}
+header, nav {
+	background-color: #844414;   /*Primary brown color used for website.*/
+	margin: 0;
+}
+header a, nav a {
+	color: #FCF7F2;   /*Very light beige color that is used for the main background color of the website and contrast text.*/
+}
+h1, header p, nav ul {
+	margin: 0;
+}
+header {
+	padding: 1em 0 0 2em;
+}
+h1, h2, h3, .sidebar-business, table caption {
+	font-family: Georgia, "Times New Roman", serif;
+}
+h1 {
+	font-size: 2em;
+}
+header a {
+	text-decoration: none;
+}
+header p {
+	font-family: Georgia, "Times New Roman", serif;
+	margin-left: 0.1em;
+}
+nav {
+    text-align: left;
+}
+nav ul {
+    list-style-type: none;
+	padding: 0;
+}
+nav li { 
+    display: inline;
+}
+nav a {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0.25em 0;
+	padding: 1em;
+	transition: text-shadow 0.6s ease;
+}
+nav a:focus, nav a:hover{ 
+    text-shadow: 3px 2px 8px #F4F719;   /*Will cast a yellow shadow around the navigation menu links when selected with tab key.*/
+}
+h2 {
+	font-size: 2.1em;
+	background-color: #844414;   /*Primary brown color used for website.*/
+	color: #FCF7F2;   /*Very light beige color that is used for the main background color of the website and contrast text.*/
+	text-align: center;
+	padding: 0.5em 0;
+	width: 9em;
+	margin: 1em auto;
+	border-radius: 35px;
+}
+h3 {
+	font-size: 1.7em;
+	color: #844414;   /*Primary brown color used for website.*/
+}
+main {
+	flex: 7;
+}
+main section p {
+	font-size: 1.4em;
+}
+aside {
+	flex: 3;
+}
+aside p {
+	font-size: 1.1em;
+}
+address p {
+	margin: 0.5em 0 1.5em 1.5em;
+}
+/*Beginning of rulesets for form*/
+form p {
+	color: #844414;   /*Primary brown color used for website.*/
+}
+label {
+	font-size: 1.1em;
+    padding-right: 0.5em;
+    float: left;
+}
+input[type=text], input[type=tel], input[type=email], input[type=number], select, textarea {
+	border-radius: 3px;
+	width: 100%;
+	padding: 0.5em 0;
+	margin-top: 1em;
+    margin-bottom: 1em;
+}
+textarea {
+	resize: none;
+    padding-bottom: 7em;
+}
+input[type=radio], input[type=checkbox] {
+	display: block;
+    margin-bottom: 1em;
+}
+input:focus:invalid, textarea:focus:invalid {
+	background: url(images/x-mark.png);
+	background-position: 98% 0%;
+    background-repeat: no-repeat;
+	background-color: #FFF0F0;   /*Pink color used for invalid form inputs.*/
+	border: 3px solid #FF0000;   /*Red color.*/
+}
+input:invalid, textarea:invalid {
+	background: url(images/x-mark.png);
+	background-position: 98% 0%;
+    background-repeat: no-repeat;
+	background-color: #FFFFFF;
+}
+input:focus:valid, textarea:focus:valid {
+	background: url(images/checkmark.png);
+	background-position: 98% 0%;
+    background-repeat: no-repeat;
+	background-color: #EBFAEB;   /*Light green color used for invalid form inputs.*/
+	border: 3px solid #008000;   /*Green color.*/
+}
+input:valid, textarea:valid {
+	background: url(images/checkmark.png);
+	background-position: 98% 0%;
+    background-repeat: no-repeat;
+	background-color: #FFFFFF;
+	border: 1px solid #008000;   /*Green color.*/
+}
+#Send:Valid {
+	background-position: 150%;
+	border: none;
+}
+/*Ending of rulesets for form*/
+/*Beginning of rulesets for table*/
+section table caption {
+	font-size: 1.6em;
+	font-weight: bold;
+	text-align: center;
+	color: #844414;   /*Primary brown color used for website.*/
+	margin: 0.2em 0 0.8em 0;
+}
+section table {
+	background-color: #FCF7F2;   /*Very light beige color that is used for the main background color of the website and contrast text.*/
+	margin-bottom: 1.5em;
+	border-collapse: collapse;
+}
+section table th {
+	background-color: #844414;   /*Primary brown color used for website.*/
+	font-size: 1.1em;
+	color: #FCF7F2;   /*Very light beige color that is used for the main background color of the website and contrast text.*/
+}
+section table th, section table td {
+	padding: 1em;
+}
+section table td {
+	font-size: 0.9em;
+}
+tr:nth-of-type(even) {
+    background-color: #EBE0D5;   /*Darker beige line used to separate the main content from the sidebar content and for table.*/                                         
+}
+/*Ending of rulesets for table*/
+footer {
+	background-color: #844414; /*Primary brown color used for website.*/
+	color: #FCF7F2;   /*Very light beige color that is used for the main background color of the website and contrast text.*/
+    padding: 1.5em 1em;
+}
+footer a {
+	color: #FCF7F2;   /*Very light beige color that is used for the main background color of the website and contrast text.*/
+}
+#wrapper {
+    width: 80%;
+    margin: auto;
+}
+#flex { 
+    display: flex;
+    flex-direction: row;
+}
+#logo {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	margin-left: 14em;
+}
+#hero-image {       /*Sets hero image to be responsive. Will grow and shrink to fit its area.*/
+	width: 100%;
+	height: auto;
+	max-height: 350px;
+}
+#page-content {
+	margin-right: 2.5em;
+	padding-right: 2.5em;
+	border-right: 2px solid #EBE0D5;   /*Darker beige line used to separate the main content from the sidebar content and for table.*/
+}
+#Send {
+    font-weight: bold;
+    background-color: #844414;   /*Primary brown color used for website.*/;
+	color: #FCF7F2;   /*Very light beige color that is used for the main background color of the website and contrast text.*/
+	margin-left: 10em;
+	margin-bottom: 2em;
+    padding: 0.5em 0.5em;
+	width: 5em;
+}
+.copyright {
+	font-size: 0.9em;
+	font-style: italic;
+}
+.content-links {
+    color: #844414;   /*Primary brown color used for website.*/
+}
+.content-links:focus, .content-links:hover {
+    color: #1F298F;   /*Darker blue color used for links that are focused on or hovered over.*/
+}
+.float-left {
+	float: left;
+	margin-right: 1em;
+}
+.sidebar-business {
+	font-size: 1.3em;
+	font-style: normal;
+	font-weight: bold;
+	margin: 0 0 0 0.5em;
+}
+.center {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.price {
+	text-align: center;
+}
+.check-radio-width {
+	width: 6em;
+}
+@media only screen and (max-width: 1024px) {  /*Used to make the website responsive.*/
+nav {
+    padding: 0.5em 0 1em 0;
+}
+nav li { 
+    display: block;
+}
+nav a {
+    font-size: 1em;
+	padding: 0 0 0 3em;
+	margin: 0.1em 0;
+}
+h2 {
+	font-size: 1.5em;
+}
+h3 {
+	font-size: 1.3em;
+}
+main section p {
+	font-size: 1.1em;
+}
+aside {
+	border-top: 2px solid #EBE0D5;
+	margin-bottom: 2em;
+}
+aside img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Beginning of rulesets for form*/
+label {
+	font-size: 1em;
+}
+/*Ending of rulesets for form*/
+/*Beginning of rulesets for table*/
+section table caption {
+	font-size: 1.3em;
+}
+section table th {
+    font-size: 1em;
+}
+section table th, section table td {
+	padding: 0.5em;
+}
+section table td {
+    font-size: 0.8em;
+}
+/*Ending of rulesets for table*/
+#wrapper {
+    width: 95%;
+}
+#flex {
+    flex-direction: column;
+}
+#page-content {
+	margin-right: 0;
+	padding-right: 0;
+	border-right: none;
+}
+.sidebar-business {
+	font-size: 1.1em;
+}
+.float-left {
+	float: none;
+}
+}

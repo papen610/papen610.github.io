@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Noah's Ark &mdash; Home</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Noah A. Pape">
+  <meta name="description" content="Noah's Ark - Monday through Saturday, feel free to contact Noah's Ark during open hours between 8:00am – 9:00pm with our phone number or contact form.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="noahs-ark.css">
+  <link rel="icon" type="image/png" href="images/noahs-ark-favicon.png"/>
+</head>
+
+<body>
+  <header>
+	<a href="index.html"><img src="images/arks-logo.png" alt="Noah's Ark's cat logo" width="50" height="50" id="logo"></a>   <!-- The logo, name of website, and tagline link to homepage if clicked on. -->
+    <h1><a href="index.html">Noah's Ark</a></h1>
+	<p><a href="index.html">Pet Services in Greensburg, PA</a></p>   <!-- The tagline for the website. -->
+  </header> 
+  
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dog-training.html">Dog Training</a></li>
+      <li><a href="pet-grooming.html">Pet Grooming</a></li>
+      <li><a href="pet-vaccinations.html">Pet Vaccinations</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="contact-us.html">Contact Us</a></li>
+    </ul>
+  </nav>
+<div>
+  <img src="images/hero-image.jpg" alt="hero image for Noah's Ark's showing a woman with her dog" id="hero-image">
+</div>
+<div id="wrapper">      <!-- Formats an area that will seperate content from background image. -->
+<div id="flex">         <!-- Used to create the primary and sidebar sections of the website. -->
+  <main>
+  <section id="page-content">
+    <h2>Contact Us</h2>
+	<h3>Contact Information</h3>
+    <p>
+    Here at Noah’s Ark, what you have to say is very important to us. Remember, your pet doesn’t have a voice, so speak up for
+	him/her!
+    </p>
+	<p>
+	You can use the form below to get in contact with us. Whether this be to schedule a service, leave a comment, or ask a
+	question, this is the place to do it. We typically respond within a few hours during business hours. If you would like to
+	get in touch with us sooner than this, then please use the phone number to the side to get in contact with a member of our
+	staff right away. <b>We are open Monday through Saturday from 8:00am to 9:00pm.</b>
+	</p>
+    <h3>Contact Form</h3>
+    <p>
+    Keep in mind, when filling out the form below, be sure to provide your name, email, message type, and message. We look
+	forward to hearing from you and your pet!
+    </p>
+	<form method="get" enctype="text/plain">
+      <p>*Personal Information</p>	
+      <label for="FName">*First Name:</label>
+      <input type="text" name="FName" id="FName" maxlength="25" pattern="[A-Za-z]{1,25}" placeholder="John" required>
+
+      <label for="LName">*Last Name:</label>
+      <input type="text" name="LName" id="LName" maxlength="25" pattern="[A-Za-z]{1,25}" placeholder="Smith" required>
+	  
+      <label for="Age">*Age:</label>
+      <input type="number" name="Age" id="Age" min="16" max="110" placeholder="16-110" required>
+	  
+      <label for="Email">*E-mail:</label>
+      <input type="email" name="Email" id="Email" placeholder="johnsmith@gamil.com" required>
+
+      <label for="Phone">*Phone:</label>
+      <input type="tel" name="Phone" id="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+	  
+	  <label for="New">*New to the Ark?</label>
+	  <select name="New" id="New" required>
+	    <option value="" selected="selected" hidden="hidden">Select here</option>
+	    <option value="Yes">Yes</option>
+		<option value="No">No</option>
+		<option value="NotSure">Not Sure</option>
+      </select>
+	  <br><br>
+	  
+      <p>*Message Type:</p>
+
+      <label for="schedule" class="check-radio-width">Schedule</label>
+      <input type="radio" name="Type" id="schedule" value="Schedule" required>
+
+      <label for="question" class="check-radio-width">Question</label>
+      <input type="radio" name="Type" id="question" value="Question">
+
+      <label for="comment" class="check-radio-width">Comment</label>
+      <input type="radio" name="Type" id="comment" value="Comment">
+
+      <label for="concern" class="check-radio-width">Concern</label>
+      <input type="radio" name="Type" id="concern" value="Concern">
+
+      <label for="other" class="check-radio-width">Other</label>
+      <input type="radio" name="Type" id="other" value="Other">
+	  <br>
+	  
+      <label for="Message">*Message:</label>
+      <textarea name="Message" id="Message" minlength="5" maxlength="500" placeholder="My message" required></textarea>
+	  
+	  <p>Best Time to Contact You:</p>
+	  
+	  <label for="morning" class="check-radio-width">Morning</label>
+      <input type="checkbox" name="ConTime" id="morning" value="Morning">
+
+      <label for="afternoon" class="check-radio-width">Afternoon</label>
+      <input type="checkbox" name="ConTime" id="afternoon" value="Afternoon">
+
+      <label for="evening" class="check-radio-width">Evening</label>
+      <input type="checkbox" name="ConTime" id="evening" value="Evening">
+
+      <label for="asap" class="check-radio-width">ASAP</label>
+      <input type="checkbox" name="ConTime" id="asap" value="ASAP">
+	  <br>
+
+      <input type="submit" id="Send" value="Send">
+	  <br>
+    </form>
+
+  </section>
+  </main>
+  <aside>   <!-- Sidebar -->
+    <h3>Business Information</h3>
+    <address>
+	<p class="sidebar-business">Street Address:</p>
+	<p>123 Pet Lane,<br>Greensburg, PA</p>
+	<p class="sidebar-business">Phone Number:</p>
+	<p>(888) 888-8888</p>
+	<p class="sidebar-business">Email Address:</p>
+	<p><a href="mailto:papen@my.westmoreland.edu" class="content-links">noahsarkfakeemail@gmail.com</a></p>
+	<p class="sidebar-business">Noah's Ark Contact Form:</p>
+	<p><a href="contact-us.html" class="content-links">Contact Us</a></p>
+    </address>
+	<h3>New to the Ark</h3>
+	<p>
+	Noah’s Ark is now offering grooming for your furry friend! For specific information and deals, check out the
+	<a href="pet-grooming.html" class="content-links">Pet Grooming</a> page.
+	</p>
+	<img src="images/dog-bath.jpg" alt="dog being given a bath at Noah's Ark" width="300" height="200">
+  </aside>
+</div> <!-- End of flex container. -->
+</div> <!-- End of wrapper. -->
+  <footer>
+    <p class="copyright">
+	This page is a simulation and a course requirement for WEB 277 (Electronic Commerce Technology) at Westmoreland County Community College. &copy; 2021 Noah A. Pape, 
+	<a href="mailto:papen@my.westmoreland.edu">papen@my.westmoreland.edu</a>
+	</p>
+  </footer>
+</body>
+</html>
